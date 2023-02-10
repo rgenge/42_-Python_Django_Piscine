@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.styleform
+{
+    color: red;
+}
+</style>
+<head>
+    <script src = "popup.js"></script>
+    <title>42 Student Form</title>
+</head>
+<body>
+<h3>42 Student Form</h3> 
+<form action = "javascript:displayFormContents()">
+<ul>
+    <li>
+        <label for="firstname">First Name</label>
+        <input id = "firstname" type = "text"; class ="styleform"\><br>
+    </li>
+    <li>
+        <label for="name">Name</label>
+        <input id = "name" type = "text"; class ="styleform"\><br>
+    </li>
+    <li>
+        <label for="age">Age</label>
+        <input id = "age" type = "number"; class ="styleform"\><br>
+    </li>
+    <li>
+        <label for="phone">Phone</label>
+        <input id = "phone" type = "tel"; class ="styleform"\><br>
+    </li>
+    <li>
+        <label for="email">Email</label>
+        <input id = "email" type = "email"; class ="styleform"\><br>
+    </li>
+    <li>
+        <label for="gender">Gender:  Male:</label>
+        <input name = "gender" id = "gender_male" value = "Male" type = "radio"; class = "styleform"\>
+        <label for="gender">Female:</label>
+        <input name = "gender" id = "gender_female" value = "Female" type = "radio"; class = "styleform"\>
+        <label for="gender">Other:</label>
+        <input name = "gender" id = "gender_other" value = "Other" type = "radio"; class = "styleform"\>
+    </li>
+    <li>
+        <label for="student">42 Student   Yes:</label>
+        <input name = "student" id = "student" type = "checkbox"; class = "styleform"\>
+    </li>
+    <p>
+        <input type = "submit" value = "Submit"/>
+    </p>
+</ul>
+</body>
+</html>

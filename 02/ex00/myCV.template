@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> {page title} </title>
+    </head>
+	<body>
+		<ol>
+			<li>Name: {name} </li>
+			<li>Surname: {surname} </li>
+			<li>Age: {age} </li>
+            <li>Profession: {profession} </li>
+			<li>Telephone: {tel} </li>
+		</ol>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+{% extends "ex01/base.html" %}
+{% load static %}
+
+{% block htmlstyle %}
+<link href ="{% static 'ex01/style2.css' %}" rel = "stylesheet">  
+{% endblock htmlstyle %}
+
+{% block pagetitle %} 
+<title>Ex01: Template engine.</title>
+{% endblock %}
+
+{% block content %}
+<p>
+        Being a web framework, Django needs a convenient way to generate HTML dynamically.
+    the most common approach relies on templates. A template contains the static parts 
+    of the desired HTML output as well as some special syntax describing how dynamic 
+    content will be inserted. For a hands-on example of creating HTML pages with templates.
+    A Django project can be configured with one or several template engines 
+    (or even zero if you don’t use templates). Django ships built-in backends
+    for its own template system, creatively called the Django template language
+    (DTL), and for the popular alternative Jinja2. Backends for other template 
+    languages may be available from third-parties. You can also write your own custom backend.
+    Django defines a standard API for loading and rendering templates regardless of the backend.
+    Loading consists of finding the template for a given identifier and preprocessing it,
+    usually compiling it to an in-memory representation. Rendering means interpolating the template with context 
+    data and returning the resulting string.
+</p> 
+<p> 
+        Blocks: In master templates the block tag is a placeholder that will be
+    replaced by a block in a child template with the same name. In child 
+    templates the block tag is content that will replace the placeholder 
+    in the master template with the same name.
+</p>
+<p> 
+        Loops for in : For loop is used to iterate over any iterable object, 
+    accessing one item at a time and making it available inside the for loop body. 
+    For example, if you want to create a drop down of countries in Django template, 
+    you can use the below code.
+</p>
+<p> 
+        if control structures:f the expression evaluates to True then the statements
+    1 to n will be executed followed by statement always executed . If the expression 
+    is False, only statement always executed is executed. Python knows which lines
+    of code are related to the if statement by the indentation, no extra syntax is 
+    necessary.
+</p>
+<p> 
+        The display of passing context variables :The context_processors option is a list of 
+    callables - called context processors that take a request object as their argument
+    and return a dictionary of items to be merged into the context. In the default 
+    generated settings file.
+</p>
+{% endblock %}

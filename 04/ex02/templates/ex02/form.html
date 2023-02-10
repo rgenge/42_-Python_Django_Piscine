@@ -1,0 +1,13 @@
+{% extends "ex02/base.html" %}
+
+{% block content %}  
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+            <input type="submit" value="Submit">
+            <hr>
+        {% for line in message %}
+            <li> {{ line }} </li>
+        {% endfor %}
+    </form>
+{% endblock %}  
